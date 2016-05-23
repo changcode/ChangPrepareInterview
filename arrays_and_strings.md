@@ -1,5 +1,8 @@
 # Arrays and Strings
-1. 判断一个String的 All Chars 是否Unique, 如果不能使用额外空间求解
+
+##1. 判断一个String的 All Chars 是否Unique, 如果不能使用额外空间求解
+
+1. 
 
 `public boolean isUniqueChars(String str) {
 
@@ -18,6 +21,6 @@
         }
         return true;
     }`
+   
 
-2. 
 
