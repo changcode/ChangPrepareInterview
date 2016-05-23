@@ -1,2 +1,2 @@
-# Arraya and Strings
+# Arrays and Strings
 
