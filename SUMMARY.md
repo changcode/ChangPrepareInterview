@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Cracking The Coding Interview](chapter1.md)
-   * [Arraya and Strings](arraya_and_strings.md)
+   * [Arrays and Strings](arraya_and_strings.md)
 
