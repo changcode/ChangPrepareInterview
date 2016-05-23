@@ -5,33 +5,35 @@
 普通解法，开数组长度128（ASCII），charAt 直接用int接收。
 Time:O(n) Space:O(n)
 
-`public boolean isUniqueChars(String str) {
+```java
+public boolean isUniqueChars(String str) {
+    int totalChars = 128;
 
-        int totalChars = 128;
+    if (str.length() > totalChars)
+        return false;
 
-        if (str.length() > totalChars)
+    int[] charsArray = new int[totalChars];
+    for (int i = 0; i < str.length(); i++) {
+        int c = str.charAt(i);
+        if (charsArray[c] != 0)
             return false;
-
-        int[] charsArray = new int[totalChars];
-        for (int i = 0; i < str.length(); i++) {
-            int c = str.charAt(i);
-            if (charsArray[c] != 0)
-                return false;
-            else
-                charsArray[c] ++;
-        }
-        return true;
-    }`
+        else
+            charsArray[c] ++;
+    }
+    return true;
+}
+```
  
 不使用额外空间解 使用bit vector Time:O(n) Space:O(1)
-`
-    public boolean isUniqueCharsBit(String str) {
-        int bitVector = 0;
-        for (int i = 0; i < str.length(); i++) {
-            int val = str.charAt(i);
-            if ((1 << val & bitVector) > 1)
-                return false;
-            bitVector = bitVector | 1 << val;
-        }
-        return true;
-    }`
+```java
+public boolean isUniqueCharsBit(String str) {
+    int bitVector = 0;
+    for (int i = 0; i < str.length(); i++) {
+        int val = str.charAt(i);
+        if ((1 << val & bitVector) > 1)
+            return false;
+        bitVector = bitVector | 1 << val;
+    }
+    return true;
+}
+```
