@@ -24,8 +24,8 @@ Time:O(n) Space:O(n)
     }`
  
 不使用额外空间解 使用bit vector Time:O(n) Space:O(1)
-
-`    public boolean isUniqueCharsBit(String str) {
+`
+    public boolean isUniqueCharsBit(String str) {
         int bitVector = 0;
         for (int i = 0; i < str.length(); i++) {
             int val = str.charAt(i);
@@ -34,5 +34,4 @@ Time:O(n) Space:O(n)
             bitVector = bitVector | 1 << val;
         }
         return true;
-    }
-`
+    }`
