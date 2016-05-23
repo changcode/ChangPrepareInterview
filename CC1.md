@@ -157,3 +157,7 @@ public String replaceWhitespace(String str) {
 ##5.压缩字符串，aabcccaaa -> a2b1c3a3, 如果压缩后字符串长度没有减少，输出原始字符串
 
 
+普通模拟解法String操作时间复杂度过高 Time O(p + k <sup>2</sup> ) P是str length，k是character sequence
+
+使用StringBuffer
+
