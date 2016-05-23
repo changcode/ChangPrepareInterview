@@ -152,3 +152,8 @@ public String replaceWhitespace(String str) {
 
 }
 ```
+
+
+##5.压缩字符串，aabcccaaa -> a2b1c3a3, 如果压缩后字符串长度没有减少，输出原始字符串
+
+
