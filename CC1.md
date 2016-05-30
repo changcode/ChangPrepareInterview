@@ -161,6 +161,9 @@ public String replaceWhitespace(String str) {
 
 使用StringBuffer
 
+##6.顺时针旋转matrix 90度
+
+
 ##7.把Matrix中含有0的行列都设为0
 两个方法：
 1.2个vector，存储含有0的行和列，之后设置。
