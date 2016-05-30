@@ -161,3 +161,99 @@ public String replaceWhitespace(String str) {
 
 使用StringBuffer
 
+##7.把Matrix中含有0的行列都设为0
+两个方法：
+1.2个vector，存储含有0的行和列，之后设置。
+```java
+public void setZeroN(int[][] matrix) {
+    boolean[] row = new boolean[matrix.length];
+    boolean[] col = new boolean[matrix[0].length];
+
+    for (int i = 0; i < matrix.length; i++) {
+        for (int j = 0; j < matrix[0].length; j++) {
+            if(matrix[i][j] == 0) {
+                row[i] = true;
+                col[j] = true;
+            }
+        }
+    }
+
+    for (int i = 0; i < row.length; i ++) {
+        if (row[i])
+            zeroMatrixRow(matrix, i);
+    }
+
+    for (int i = 0; i < col.length; i++) {
+        if (col[i])
+            zeroMatrixCol(matrix, i);
+    }
+}
+```
+2.在matrix首行，首例存储含有0的行列。
+```java
+    public void setZeros(int[][] matrix) {
+        int row = matrix.length;
+        int col = matrix[0].length;
+
+        boolean rowZero = false;
+        boolean colZero = false;
+
+        for (int i = 0; i < row; i++) {
+            if (matrix[i][0] == 0)
+                rowZero = true;
+        }
+
+        for (int i = 0; i < col; i++) {
+            if (matrix[0][i] == 0)
+                colZero = true;
+        }
+
+        for (int i = 1; i < row; i ++) {
+            for (int j = 1; j < col; j++) {
+                if (matrix[i][j] == 0) {
+                    matrix[0][j] = 0;
+                    matrix[i][0] = 0;
+                }
+            }
+        }
+
+        for (int i = 1; i < col; i ++) {
+            if (matrix[0][i] == 0)
+                zeroMatrixCol(matrix, i);
+        }
+
+        for (int i = 1; i < row; i++) {
+            if (matrix[i][0] == 0)
+                zeroMatrixRow(matrix, i);
+        }
+
+        if (rowZero)
+            zeroMatrixCol(matrix, 0);
+
+        if (colZero)
+            zeroMatrixRow(matrix, 0);
+    }
+
+    public void zeroMatrixCol(int[][] matrix, int col) {
+        for (int i = 0; i < matrix.length; i++) {
+            matrix[i][col] = 0;
+        }
+    }
+
+    public void zeroMatrixRow(int[][] matrix, int row) {
+        for (int i = 0; i < matrix[0].length; i++) {
+            matrix[row][i] = 0;
+        }
+    }
+```
+
+##8.Give a method isSubstring check one string is another. Check s2 is a rotation of s1 only can use isSubstring.("waterbottle" rotation is "erbottlewat")
+
+s1 = xy = "shuchang"
+x = "shu"
+y = "chang"
+
+s2 = yx = changshu
+
+Tricky: s1s1 = xyxy
+isSubstring(s1s1, s2) is true;
