@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-   * LeetCode
+   * [LeetCode](leetcode.md)
 * [Cracking The Coding Interview](CC150.md)
    * [Arrays and Strings](CC1.md)
    * [Linked Lists](CC2.md)
