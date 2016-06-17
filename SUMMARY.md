@@ -8,6 +8,5 @@
    * [LeetCode](leetcode.md)
        * [Array](array.md)
            * [Container With Most Water](Leetcode/LTltremove_duplicates_from_sorted_array.md)
-           * [Remove Duplicates from Sorted Array](Leetcode/LTltremove_duplicates_from_sorted_array.md)
-           * [Next Permutation](Leetcode/lcnextpermutation_md.md)
+           * [Next Permutation](Leetcode/LTnext_permutation.md)
 
