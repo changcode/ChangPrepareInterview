@@ -1,2 +1,0 @@
-# Container With Most Water
-
