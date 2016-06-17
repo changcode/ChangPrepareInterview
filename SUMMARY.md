@@ -9,5 +9,5 @@
        * [Array](array.md)
            * [Container With Most Water](Leetcode/ltcontainerwith_most_water_md.md)
            * [Remove Duplicates from Sorted Array](Leetcode/ltltremoveduplicates_from_sorted_array_md.md)
-           * [Next Permutation](LCnext_permutation.md)
+           * [Next Permutation](Leetcode/lcnextpermutation_md.md)
 
