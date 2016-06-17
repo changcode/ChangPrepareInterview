@@ -9,4 +9,5 @@
        * [Array](array.md)
            * [Container With Most Water](LTcontainer_with_most_water.md)
            * [Remove Duplicates from Sorted Array](LTltremove_duplicates_from_sorted_array.md)
+           * Next Permutation
 
