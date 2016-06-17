@@ -7,7 +7,7 @@
        * [Stacks and Queues](CC3.md)
    * [LeetCode](leetcode.md)
        * [Array](array.md)
-           * [Container With Most Water](Leetcode/ltcontainerwith_most_water_md.md)
+           * [Container With Most Water](Leetcode/LTltremove_duplicates_from_sorted_array.md)
            * [Remove Duplicates from Sorted Array](Leetcode/ltltremoveduplicates_from_sorted_array_md.md)
            * [Next Permutation](Leetcode/lcnextpermutation_md.md)
 
